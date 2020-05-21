@@ -1,0 +1,8 @@
+/* pages/goods_detail/childCpns/w-introduce/w-introduce.wxss */
+.goods_info_title{
+  font-size: 32rpx;
+  color: var(--themeColor);
+  font-weight: 600;
+  padding: 20rpx;
+  border-bottom: 6rpx solid #eee;
+}

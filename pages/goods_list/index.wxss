@@ -1,0 +1,8 @@
+/* pages/goods_list/index.wxss */
+.isFixed {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,4 @@
+<!--components/w-check/w-check.wxml-->
+<icon type="success" size="26"
+  style='border-color: {{isChecked ? "#EB4450" : "#ccc"}}' 
+  color='{{isChecked ? "#EB4450" : "#ccc"}}' bind:tap="handleCheck"></icon>

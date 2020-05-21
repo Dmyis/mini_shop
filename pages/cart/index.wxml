@@ -1,0 +1,10 @@
+<!--pages/cart/index.wxml-->
+<!-- 1.选择收货地址 -->
+<w-address />
+<!-- 2.购物车列表 -->
+<block wx:for="{{cartList}}" wx:key="goods_id">
+	<w-cart-item cartList="{{item}}" index="{{index}}" />
+</block>
+<!-- 3.底部结算 -->
+<w-tool selected="{{isSelectAll}}" price="{{totalPrice}}" 
+counter="{{totalCounter}}"  bind:onSelectAll="onSelectAll"/>

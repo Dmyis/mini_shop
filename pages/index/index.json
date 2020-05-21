@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-search-input":"../../components/w-search-input/w-search-input",
+    "w-swiper":"../../components/w-swiper/w-swiper",
+    "w-category":"./childCpns/w-category/w-category",
+    "w-floor":"./childCpns/w-floor/w-floor"
+  }
+}

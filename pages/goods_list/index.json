@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "w-search-input": "../../components/w-search-input/w-search-input",
+    "w-tabs":"./childCpns/w-tabs/w-tabs",
+    "w-back-top":"../../components/w-back-top/w-back-top",
+    "w-tabs-content":"./childCpns/w-tabs-content/w-tabs-content"
+  },
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "onReachBottomDistance":30
+}

@@ -1,0 +1,23 @@
+<!--pages/goods_detail/childCpns/w-tool/w-tool.wxml-->
+<view class="btm-tool">
+  <view class="tool-item">
+    <text class="iconfont icon-kefu"></text>
+    <view>客服</view>
+    <button class="effect-btn" open-type="contact"></button>
+  </view>
+  <view class="tool-item">
+    <text class="iconfont icon-icon-"></text>
+    <view>分享</view>
+    <button class="effect-btn" open-type="share"></button>
+  </view>
+  <navigator open-type="switchTab" url="/pages/cart/index" class="tool-item">
+    <text class="iconfont icon-gouwuche"></text>
+    <view>购物车</view>
+  </navigator>
+  <view class="tool-item tool-add" bindtap="handleAddCart">
+    <view>加入购物车</view>
+  </view>
+  <view class="tool-item tool-buy">
+    <view>立即购买</view>
+  </view>
+</view>

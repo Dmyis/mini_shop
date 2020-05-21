@@ -1,0 +1,8 @@
+<!--pages/goods_detail/childCpns/w-introduce/w-introduce.wxml-->
+<view class="goods_info">
+  <view class="goods_info_title">图文详情</view>
+  <view class="goods_info_content">
+  <!-- 标签字符串转换为标签要使用富文本rich-text标签 -->
+    <rich-text nodes="{{detailList}}"></rich-text>
+  </view> 
+</view>

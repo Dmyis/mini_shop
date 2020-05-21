@@ -1,0 +1,11 @@
+/* pages/index/childCpns/w-category/w-category.wxss */
+.category_box{
+  display: flex;
+}
+.category_item{
+  padding: 20rpx;
+  flex: 1;
+}
+.category_img{
+  width: 100%;
+}

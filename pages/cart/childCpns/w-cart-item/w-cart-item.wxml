@@ -1,0 +1,21 @@
+<!--pages/cart/childCpns/w-cart-item/w-cart-item.wxml-->
+<view class="cart_item">
+	<!-- 复选框 -->
+	<w-check class="checkbox-group" isChecked="{{cartList.checked}}" bind:tap='onCheckClick'  data-index="{{index}}" />
+	<!-- 商品图片 -->
+	<navigator class="cart_img_wrap">
+		<image class="cart_img" mode="widthFix" src="{{cartList.goods_img}}" />
+	</navigator>
+	<!-- 商品信息 -->
+	<view class="cart_info_wrap">
+		<view class="goods_name">{{cartList.goods_name}}</view>
+		<view class="goods_price_wrap">
+			<view class="goos_price">￥{{cartList.goods_price}}</view>
+			<view class="cart_num_tool">
+				<view class="num_edit" bind:tap="decrement">-</view>
+				<view class="goods_num">{{cartList.count}}</view>
+				<view class="num_edit" bind:tap="iecrement">+</view>
+			</view>
+		</view>
+	</view>
+</view>

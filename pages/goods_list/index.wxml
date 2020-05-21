@@ -1,0 +1,26 @@
+<!--pages/goods_list/index.wxml-->
+<!-- 1.搜索框 -->
+<w-search-input id="WSI" />
+<!-- 2.tabs -->
+<w-tabs tabs="{{tabs}}" bindtabsItemChange="tabsItemChange" />
+<!-- tabs吸顶效果 -->
+<view hidden="{{isTabShow}}" class="{{!isTabShow ? 'isFixed': ''}}">
+	<w-tabs tabs="{{tabs}}" bindtabsItemChange="tabsItemChange" />
+</view>
+<!-- 3.返回顶部按钮 -->
+<view hidden="{{isShowBackTopIcon}}">
+	<w-back-top />
+</view>
+
+<view class="tabs_content">
+	<!-- 综合 -->
+	<block wx:if='{{tabs[0].isActive}}'>
+		<w-tabs-content goodsList="{{goodsList}}" />
+	</block>
+	<!-- 销量 -->
+	<block wx:elif='{{tabs[1].isActive}}'>1</block>
+	<!-- 价格 -->
+	<block wx:elif='{{tabs[2].isActive}}'>
+		<w-tabs-content goodsList="{{priceGoodsList}}" />
+	</block>
+</view>

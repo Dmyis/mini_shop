@@ -1,0 +1,45 @@
+/* pages/goods_detail/childCpns/w-tool/w-tool.wxss */
+@import "../../../../styles/iconfont.wxss";
+.btm-tool{
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+}
+
+.tool-item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.tool-add,
+.tool-buy{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 600;
+  font-size: 30rpx;
+}
+.tool-add{
+  background-color: #ffa500;
+}
+.tool-buy{
+  background-color: #F8554D;
+}
+.effect-btn{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

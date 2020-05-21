@@ -1,0 +1,8 @@
+<!--pages/goods_detail/childCpns/w-swiper/w-swiper.wxml-->
+<view>
+	<swiper class="detail_swiper" autoplay indicator-dots circular indicator-active-color="rgba(235,68,80,.9)">
+		<swiper-item wx:for="{{detailList.pics}}" wx:key="pics_id" bind:tap="handlePrevew" data-url="{{item.pics_mid}}">
+			<image class="detail_swiper_img" mode="widthFix" src="{{item.pics_mid}}" />
+		</swiper-item>
+	</swiper>
+</view>

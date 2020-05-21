@@ -1,0 +1,10 @@
+<!--pages/cart/childCpns/w-address.wxml-->
+<view class="cart-top">
+	<view class="address-box {{addressIsActive?'activeColor':''}}" bind:tap="choiceAddress" >
+		<text class="iconfont icon-location"></text>
+		<view class="address">{{address}}</view>
+	</view>
+	<view class="edit-box">
+		<view>编辑</view>
+	</view>
+</view>

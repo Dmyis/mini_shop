@@ -1,0 +1,32 @@
+
+@import "../../../../styles/iconfont.wxss";
+
+page{
+  background-color: #F0F0F0;
+}
+.cart-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  background-color: #fff;
+}
+.address-box{
+  display: flex;
+  flex: 5;
+  color: #777;
+  padding: 30rpx 20rpx;
+}
+.activeColor{
+  color: #000;
+}
+.address{
+  margin-top: 4rpx;
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+.edit-box{
+  padding: 30rpx 20rpx;
+  display: flex;
+  flex: 1;
+}

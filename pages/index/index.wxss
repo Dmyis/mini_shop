@@ -1,0 +1,4 @@
+/* pages/index/index.wxss */
+text{
+  /* color: var(--themeColor); */
+}

@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<!-- 1.头部搜索框 -->
+<w-search-input />
+<!-- 2.轮播图 -->
+<w-swiper swiperList="{{swiperList}}"/>
+<!-- 3.导航栏 -->
+<w-category catesList="{{catesList}}"/>
+<!-- 4.楼层 -->
+<w-floor floorList="{{floorList}}"/>

@@ -1,0 +1,8 @@
+/* pages/goods_detail/childCpns/w-swiper/w-swiper.wxss */
+.detail_swiper{
+  height: 65vw;
+  text-align: center;
+}
+.detail_swiper_img{
+  width: 60%;
+}

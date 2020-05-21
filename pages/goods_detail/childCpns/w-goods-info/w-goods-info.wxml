@@ -1,0 +1,11 @@
+<!--pages/goods_detail/childCpns/w-goods-info/w-goods-info.wxml-->
+<!-- 2.价格 -->
+<view class="goods_price">￥{{detailList.goods_price}}</view>
+<!-- 3.商品名 -->
+<view class="goods_name_row">
+  <view class="goods_name">{{detailList.goods_name}}</view>
+  <view class="goods_collect">
+    <text class="iconfont icon-shoucang"></text>
+    <view>收藏</view>
+  </view>
+</view>

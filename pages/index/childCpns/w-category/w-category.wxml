@@ -1,0 +1,9 @@
+<!--pages/index/childCpns/w-category/w-category.wxml-->
+
+<view class="category_box">
+  <block wx:for="{{catesList}}" wx:key="name">
+    <navigator class="category_item">
+      <image src="{{item.image_src}}" mode="widthFix" class="category_img"/>
+    </navigator>
+  </block>
+</view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "w-swiper":"./childCpns/w-swiper/w-swiper",
+    "w-goods-info":"./childCpns/w-goods-info/w-goods-info",
+    "w-introduce":"./childCpns/w-introduce/w-introduce",
+    "w-tool":"./childCpns/w-tool/w-tool",
+    "w-back-top":"../../components/w-back-top/w-back-top"
+  },
+  "navigationBarTitleText": "商品详情"
+}

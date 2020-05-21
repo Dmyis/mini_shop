@@ -1,0 +1,12 @@
+<!--pages/cart/childCpns/w-tool/w-tool.wxml-->
+<view class="cart_tool">
+	<view class="checkbox-group">
+		<w-check isChecked="{{selected}}"  bind:tap="onSelectAll"/>全选
+	</view>
+
+	<view class="total">
+		总计:<text class="total_price">￥{{price}}</text>
+	</view>
+	<view class="submit">去结算({{counter}})</view>
+
+</view>

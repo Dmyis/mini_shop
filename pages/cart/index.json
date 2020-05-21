@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-address":"./childCpns/w-address/w-address",
+    "w-cart-item":"./childCpns/w-cart-item/w-cart-item",
+    "w-tool":"./childCpns/w-tool/w-tool"
+   },
+  "navigationBarTitleText": "购物车"
+}
