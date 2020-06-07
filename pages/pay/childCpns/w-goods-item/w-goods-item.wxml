@@ -1,0 +1,18 @@
+<!--pages/pay/childCpns/w-goods-item/w-goods-item.wxml-->
+<view class="goods_item">
+	<!-- 商品图片 -->
+	<view class="img_group">
+		<image src="{{cartList.goods_img}}" class="cart_img" mode="widthFix" />
+	</view>
+  <!-- 商品信息 -->
+	<view class="cart_info_wrap">
+		<view class="goods_name">{{cartList.goods_name}}</view>
+		<view class="goods_price_wrap">
+			<view class="goos_price">¥{{cartList.goods_price}}</view>
+			<view class="cart_num_tool">
+				<view class="goods_num">x{{cartList.count}}</view>
+			</view>
+		</view>
+	</view>
+
+</view>

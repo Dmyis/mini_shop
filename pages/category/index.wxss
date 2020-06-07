@@ -43,4 +43,5 @@ page{
 }
 .goods_list_img{
   width: 50%;
+  height: 100%;
 }

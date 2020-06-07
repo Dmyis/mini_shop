@@ -1,0 +1,34 @@
+/* pages/collect/childCpns/w-collect-tool/w-collect-tool.wxss */
+.collect_tool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20rpx;
+  box-shadow: 0 -2rpx 2rpx rgba(0,0,0,.1);
+  background-color:rgba(255,255,255,.8);
+}
+
+.all_group {
+  display: flex;
+  align-items: center;
+}
+
+.all_text {
+  color: #666;
+  margin-left:10rpx;
+  margin-bottom: 10rpx;
+}
+
+.cancel_collect {
+  color: #fff;
+  font-size: 30rpx;
+  letter-spacing: 4rpx;
+  text-align: center;
+  background-color: var(--themeColor);
+  border-radius: 16rpx;
+  padding: 15rpx;
+}

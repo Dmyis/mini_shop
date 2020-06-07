@@ -1,0 +1,18 @@
+<!--pages/user/childCpns/w-app-info/w-app-info.wxml-->
+<view class="app_info_wrap">
+  <view class="app_info_item ">
+    <view class="app_info_nav app_info_contact">
+      <text>联系客服</text>
+      <text>400-618-4000</text> 
+      <button class="app_info_btn" open-type="contact"></button>
+    </view> 
+  </view>
+  <view class="app_info_item">
+    <view class="app_info_nav">意见反馈</view>
+    <button class="app_info_btn" open-type="feedback">意见</button>
+  </view>
+  
+  <view class="app_info_item">
+    <navigator  class="app_info_nav">关于我们</navigator>
+  </view>
+</view>

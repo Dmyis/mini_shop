@@ -1,0 +1,5 @@
+<!--pages/collect/childCpns/w-collect-edit/w-collect-edit.wxml-->
+<view class="collect_edit_row">
+  <view class="collect_nums">共<text class="num">{{collectNum}}</text>件商品</view>
+  <view class="collect_edit" bindtap="handleEdit">{{editText}}</view>
+</view>

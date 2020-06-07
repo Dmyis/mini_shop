@@ -2,7 +2,7 @@
 <!-- 1.轮播图 -->
 <w-swiper detailList="{{detailList}}" goodsInfo="{{detailList.pics}}"/>
 <!-- 2.价格&商品名 -->
-<w-goods-info detailList="{{detailList}}" />
+<w-goods-info detailList="{{detailList}}" isCollect="{{isCollect}}" bindhandleCollect="handleCollect"/>
 <!-- 4.图文详情 -->
 <w-introduce detailList="{{detailList.goods_introduce}}" />
 <!-- 5.tab工具栏 -->

@@ -1,0 +1,11 @@
+<!--pages/pay/childCpns/w-tool/w-tool.wxml-->
+<view class="tool">
+	<view class="price">
+		<view class="price_text">实付金额:
+			<text class="price_num">{{price}}.00</text>
+		</view>
+		<view class="Discount">已减: ¥0.00</view>
+	</view>
+
+	<view class="pay" bind:tap="handlePay">微信支付</view>
+</view>

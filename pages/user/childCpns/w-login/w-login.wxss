@@ -1,0 +1,39 @@
+/* pages/user/childCpns/w-login/w-login.wxss */
+.user_ingo_wrap{
+  height: 45vh;
+  position: relative;
+}
+.user_null_bg{
+  background-color: var(--themeColor);
+}
+.user_img_wrap{
+  overflow:hidden;
+  height: 45vh;
+}
+.user_bg{
+  filter: blur(10rpx);
+  height: 45vh;
+}
+.user_info{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+.user_icon{
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 30rpx;
+}
+.user_name{
+  margin-top: 50rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+.login_wrap{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35%;
+}

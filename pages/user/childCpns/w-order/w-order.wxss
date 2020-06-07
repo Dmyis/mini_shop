@@ -1,0 +1,25 @@
+/* pages/user/childCpns/w-order/w-order.wxss */
+@import "../../../../styles/iconfont.wxss";
+
+.orders_wrap{
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.orders_title{
+  padding: 20rpx;
+  font-size: 30rpx;
+  border-bottom: 4rpx solid #E0E0E0;
+}
+.order_content{
+  display: flex;
+}
+.order_nav{
+  flex: 1;
+  text-align: center;
+  padding: 15rpx 0; 
+}
+.order_icon{
+  color: var(--themeColor);
+  margin-bottom: 6rpx;
+  font-size: 40rpx;
+}

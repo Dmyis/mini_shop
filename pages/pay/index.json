@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-address":"./childCpns/w-address/w-address",
+    "w-goods-item":"./childCpns/w-goods-item/w-goods-item",
+    "w-tool":"./childCpns/w-tool/w-tool"
+  },
+  "navigationBarTitleText": "确认订单"
 }

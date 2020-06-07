@@ -1,0 +1,22 @@
+<!--pages/user/childCpns/w-order/w-order.wxml-->
+<view class="orders_wrap">
+  <view class="orders_title">我的订单</view>
+  <view class="order_content">
+    <navigator class="order_nav" url="/pages/order/index?type=1">
+      <view class="iconfont icon-dingdan order_icon"></view>
+      <view class="order_name">全部订单</view>
+    </navigator>
+    <navigator class="order_nav" url="/pages/order/index?type=2">
+      <view class="iconfont icon-fukuantongzhi order_icon"></view>
+      <view class="order_name">待支付</view>
+    </navigator>
+    <navigator class="order_nav" url="/pages/order/index?type=3">
+      <view class="iconfont icon-daishouhuo order_icon"></view>
+      <view class="order_name">待收货</view>
+    </navigator>
+    <navigator class="order_nav" url="/pages/order/index?type=4">
+      <view class="iconfont icon-tuihuotuikuan- order_icon"></view>
+      <view class="order_name">退款/退货</view>
+    </navigator>
+  </view>
+</view>

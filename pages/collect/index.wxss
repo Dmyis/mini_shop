@@ -1,1 +1,33 @@
 /* pages/collect/index.wxss */
+page{
+  background-color: #F7F7F7;
+  padding-bottom: 90rpx;
+}
+.nullCollect{
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nullImg{
+  width: 35%;
+}
+.null_text{
+  margin-top: 30rpx;
+  font-size: 36rpx;
+}
+.null_nav{
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 30rpx;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 40rpx;
+  font-size: 36rpx;
+  color: #3985ff;
+  margin-top: 30rpx;
+}
+.null_nav_text{
+  margin-right: 20rpx;
+}

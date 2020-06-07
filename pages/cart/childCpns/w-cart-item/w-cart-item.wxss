@@ -4,9 +4,11 @@
   background-color: #fff;
   display: flex;
   border-radius: 30rpx;
-  padding: 0 20rpx 20rpx 20rpx;
+  padding: 20rpx;
 }
-
+.grey{
+  color: #eee;
+}
 .checkbox-group {
   flex: 1;
   display: flex;

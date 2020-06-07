@@ -1,0 +1,28 @@
+/* pages/user/childCpns/w-app-info/w-app-info.wxss */
+.app_info_wrap {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.app_info_item {
+  position: relative;
+  border-bottom: 4rpx solid #e0e0e0;
+}
+
+.app_info_nav {
+  padding: 20rpx;
+}
+
+.app_info_contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_info_btn {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

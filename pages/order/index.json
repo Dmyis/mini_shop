@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-tabs":"../../components/w-tabs/w-tabs",
+    "w-order-item":"./childCpns/w-order-item/w-order-item"
+  },
+  "navigationBarTitleText": "商品订单"
 }

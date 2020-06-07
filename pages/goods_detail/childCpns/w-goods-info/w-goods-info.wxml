@@ -4,8 +4,8 @@
 <!-- 3.商品名 -->
 <view class="goods_name_row">
   <view class="goods_name">{{detailList.goods_name}}</view>
-  <view class="goods_collect">
-    <text class="iconfont icon-shoucang"></text>
+  <view class="goods_collect" bindtap="handleCollect">
+    <text class="iconfont {{isCollect?'icon-shoucang-copy':'icon-shoucang'}}"></text>
     <view>收藏</view>
   </view>
 </view>

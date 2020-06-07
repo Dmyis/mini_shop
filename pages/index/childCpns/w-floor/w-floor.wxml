@@ -7,7 +7,7 @@
     </view>
     <!-- 内容 -->
     <view class="floor_list">
-      <navigator class="floor_list_nav" wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="i2" wx:key="name">
+      <navigator class="floor_list_nav" wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="i2" wx:key="name" url="{{item2.navigator_url}}">
         <image class="floor_list_img" mode="{{i2===0?'widthFix':'scaleToFill'}}" src="{{item2.image_src}}"/>
       </navigator>
     </view>

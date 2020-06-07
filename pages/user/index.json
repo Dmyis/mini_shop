@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-login":"./childCpns/w-login/w-login",
+    "w-history":"./childCpns/w-history/w-history",
+    "w-order":"./childCpns/w-order/w-order",
+    "w-address-list":"./childCpns/w-address-list/w-address-list",
+    "w-app-info":"./childCpns/w-app-info/w-app-info"
+  },
+  "navigationBarTitleText": "我的"
 }

@@ -1,0 +1,14 @@
+/* pages/user/childCpns/w-history/w-history.wxss */
+.history_wrap{
+  display: flex;
+  background-color: #fff;
+}
+.history_nav{
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.history_num{
+  color: var(--themeColor);
+  margin-bottom: 6rpx;
+}

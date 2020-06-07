@@ -1,0 +1,19 @@
+/* pages/order/childCpns/w-order-item/w-order-item.wxss */
+.order_main{
+  padding: 20rpx;
+  border-top: 1rpx solid #ccc;
+}
+.order_no_row,
+.order_price_row,
+.order_time_row{
+  display: flex;
+  padding: 10rpx 0 ;
+  justify-content: space-between;
+}
+.order_no_value{
+  color: #666;
+}
+.order_price_value{
+  font-size: 30rpx;
+  color: var(--themeColor);
+}

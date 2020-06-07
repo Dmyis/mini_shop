@@ -1,1 +1,34 @@
 /* pages/user/index.wxss */
+page{
+  position: relative;
+  background-color: #e0e0e0;
+}
+
+.user_card{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90%;
+  width: 90%;
+  color: #666;
+  padding-bottom:100rpx;
+}
+.share{
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.share_text{
+  padding: 20rpx;
+  font-weight: 400;
+  color: #666;
+  background-color: #fff;
+  font-size: 32rpx;
+}
+.cancel_login{
+  margin-top: 20rpx;
+}
+.cancel_login_btn{
+  background-color: var(--themeColor);
+  color: #fff;
+}

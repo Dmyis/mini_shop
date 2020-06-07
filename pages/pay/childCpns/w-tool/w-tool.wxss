@@ -1,0 +1,44 @@
+/* pages/pay/childCpns/w-tool/w-tool.wxss */
+.tool{
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 -4rpx 20rpx rgba(0, 0, 0, .1);
+}
+.price{
+  flex: 5;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.price_text{
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #444;
+  letter-spacing: 4rpx;
+}
+.price_num{
+  color: var(--themeColor);
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.Discount{
+  color: #999;
+  font-size: 24rpx;
+}
+.pay{
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #05B902;
+  color: #fff;
+  font-size: 32rpx;
+  letter-spacing: 4rpx;
+  font-weight: 500;
+}

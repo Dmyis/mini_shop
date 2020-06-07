@@ -1,0 +1,6 @@
+<!--pages/pay/childCpns/w-address/w-address.wxml-->
+<view class="pay_address pay_border">
+  <text class="pay_address_name pay_address_style">{{address.userName}}</text>
+  <text class="pay_address_phone  pay_address_style">{{address.telNumber}}</text>
+  <view class="pay_address_add">{{address.detail}}</view>
+</view>

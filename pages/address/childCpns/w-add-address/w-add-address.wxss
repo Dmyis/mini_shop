@@ -1,0 +1,126 @@
+/* pages/address/childCpns/w-add-address/w-add-address.wxss */
+page{
+  background-color: #e0e0e0;
+}
+.content{
+  padding:0 20rpx;
+  background-color: #fff;
+}
+.content_item{
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #ddd;
+  font-size: 32rpx;
+}
+.content_item input{
+  width: 70%;
+  color: #333;
+}
+.picker_text{
+  color: #333;
+}
+.content_lab{
+  margin-right: 40rpx;
+  color: #555;
+  width: 130rpx;
+}
+.picker{
+  position: relative;
+  color: #999;
+}
+.picker_lab{
+  width: 60%;
+}
+.picker_icon{
+  position: absolute;
+  right:0;
+  top: 11rpx;
+  margin-bottom: 10rpx;
+  font-size: 50rpx;
+  color: #777;
+}
+.lab_value{
+  padding:15rpx 25rpx;
+  border: 1rpx solid #ddd;
+  margin-right: 20rpx;
+  border-radius: 40rpx;
+}
+.lab_active{
+  border-color:blue;
+}
+.icon-jia{
+  color: #999;
+  font-weight: 500;
+}
+.content_lab_def{
+  display: flex;
+}
+.addLab{
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+}
+.addLab input{
+  padding: 6rpx 0 6rpx 30rpx;
+  border-radius: 40rpx;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1rpx solid lightskyblue;
+  border-right: 0;
+  width: initial;
+  color: #666;
+}
+.add_btn{
+  background-color: lightskyblue;
+  font-size: 26rpx;
+  border-radius: 40rpx;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1rpx solid lightskyblue;
+  padding: 16rpx 20rpx;
+}
+.cancel_addLab{
+  background-color: #999;
+  border-radius: 50%;
+  padding: 3rpx 10rpx;
+  color: #fff;
+  margin-left: 30rpx;
+}
+.ai_inp{
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 30rpx 40rpx 60rpx 40rpx;
+}
+.ai_inp_label{
+  font-size: 32rpx;
+}
+.ai_inp_text{
+  margin-top: 10rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background-color: #F6F6F6;
+  height: 150rpx;
+  width: 100%;
+  font-size: 32rpx;
+  line-height: 21rpx;
+  border-radius: 10rpx;
+}
+.address_storage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 40rpx;
+}
+.address_btn{
+  background-color: var(--themeColor);
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40rpx;
+  color: #fff;
+  font-size: 34rpx;
+}

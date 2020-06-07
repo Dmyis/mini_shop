@@ -1,0 +1,19 @@
+<!--pages/user/childCpns/w-history/w-history.wxml-->
+<view class="history_wrap">
+  <navigator class="history_nav" url="/pages/collect/index?type=1">
+    <view class="history_num">0</view>
+    <view class="history_name">收藏的店铺</view>
+  </navigator>
+  <navigator class="history_nav" url="/pages/collect/index?type=2">
+    <view class="history_num">{{collectNums}}</view>
+    <view class="history_name">收藏的商品</view>
+  </navigator>
+  <navigator class="history_nav" url="/pages/collect/index?type=3">
+    <view class="history_num">0</view>
+    <view class="history_name">关注的商品</view>
+  </navigator>
+  <navigator class="history_nav" url="/pages/collect/index?type=4">
+    <view class="history_num">0</view>
+    <view class="history_name">我的足迹</view>
+  </navigator>
+</view>

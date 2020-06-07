@@ -1,0 +1,49 @@
+<!--pages/address/childCpns/w-add-address/w-add-address.wxml-->
+<view class="content">
+	<view class="content_item">
+		<label class="content_lab">收货人</label>
+		<input placeholder="姓名" bindinput="handleIntName" maxlength="7"></input>
+	</view>
+	<view class="content_item">
+		<label class="content_lab">联系方式</label>
+		<input placeholder="手机号码" type="number"  bindinput="handleIntNumber" maxlength="11"></input>
+	</view>
+	<view class="content_item picker">
+		<label class="content_lab">所在地区</label>
+		<picker mode="region" class="picker_lab" bindchange="bindRegionChange" value="{{region}}">
+			<text class="picker_text">{{region[0]+region[1]+region[2]}}</text>
+			<text class="picker_icon">></text>
+		</picker>
+	</view>
+	<view class="content_item">
+		<label class="content_lab">详细地址</label>
+		<input placeholder="详细地址需填写楼栋楼层或房间号" maxlength="20" bindinput="handleIntDetailInfo"></input>
+	</view>
+	<view class="content_item">
+		<label class="content_lab">地址标签</label>
+		<view class="content_lab_value">
+			<view class="content_lab_def">
+				<block wx:for="{{label}}" wx:key="id">
+					<view class="lab_value {{item.isActive? 'lab_active': ''}}"
+					 bindtap="handleLabelClick" data-index="{{index}}">{{item.value}}</view>
+				</block> 
+				<view class="lab_value iconfont icon-jia" bindtap="handleAddLab" hidden="{{isShowLab}}"></view>
+			</view>
+			<view class="addLab" hidden="{{!isShowLab}}">
+				<input placeholder='标签最多填写八个字' maxlength="8" bindfocus="handleAddLabFocus" bindblur="handleAddLabBlur"/>
+				<view class="add_btn">{{editLab}}</view>
+				<view class="cancel_addLab" bindtap="cancelAddLab">×</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!--智能识别 -->
+<view class="ai_inp">
+	<view class="ai_inp_label">智能识别地址:</view>
+	<textarea class="ai_inp_text" placeholder="粘贴整段文字如: 重庆市渝北区大竹林科技集团总部,张小三,13588888888"></textarea>
+</view>
+
+<view class="address_storage">
+	<view class="address_btn" bind:tap="handleAddAddress">保存并使用该地址</view>
+</view>

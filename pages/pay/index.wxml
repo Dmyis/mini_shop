@@ -1,2 +1,11 @@
 <!--pages/pay/index.wxml-->
-<text>pages/pay/index.wxml</text>
+<scroll-view class="pay_page" scroll-y	>
+	<!-- 1.选择收获地址 -->
+	<w-address />
+	<!-- 2.购买的商品 -->
+	<block wx:for="{{cartList}}" wx:key="goods_id">
+		<w-goods-item cartList="{{item}}"/>
+	</block>
+	<!-- 3.支付 -->
+ <w-tool price="{{price}}" bind:handlePay="handlePay"/>
+</scroll-view>

@@ -1,0 +1,8 @@
+<!--pages/collect/childCpns/w-collect-tool/w-collect-tool.wxml-->
+<view class="collect_tool" hidden="{{!isCheck}}" >
+  <view class="all_group" bindtap="isCheckedAll">
+    <w-check isChecked="{{isCheckedAll}}" />
+    <text class="all_text">全选</text>
+  </view>
+  <view class="cancel_collect" bind:tap="handleCancelCollect">取消收藏</view>
+</view>

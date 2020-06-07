@@ -8,6 +8,9 @@ page,view,text,swiper,swiper-item,image,navigator{
   margin: 0;
   box-sizing: border-box;
 }
+view,text{
+  font-family: Arial;
+}
 
 /* 
   主题颜色 通过变量来实现

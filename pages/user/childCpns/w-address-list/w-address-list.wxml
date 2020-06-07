@@ -1,0 +1,4 @@
+<!--pages/user/childCpns/w-address-list/w-address-list.wxml-->
+<view class="address_list">
+  <navigator class="address_nav" url="/pages/address/address">收获地址管理</navigator>
+</view>

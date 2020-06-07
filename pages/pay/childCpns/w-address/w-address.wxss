@@ -1,0 +1,27 @@
+/* pages/pay/childCpns/w-address/w-address.wxss */
+.pay_address{
+  background-color: #fff;
+  padding: 24rpx 20rpx;
+  width: 100%;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.pay_border{
+  padding-bottom: 32rpx;
+  background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAAKBAMAAACOO0tGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAnUExURf///4u16Oxtbezz/J3B7NDh9vSmprjS8vGNjfjDw/vd3f7w8O57e0EOI68AAABSSURBVCjPY2CAAE4l7GACVJ4hUBArEIXJL8KuXw0mz4xdv2ABVJ77EHYDGmAGmGDXLwKT58CuX2cDTIEjdgOcYfJJ2A3Qgsmz4/CBwWgQUiMIAXzCOFELLk/nAAAAAElFTkSuQmCC) -7px bottom repeat-x;
+  background-size: 130rpx 10rpx;
+}
+.pay_address_style{
+  font-weight: 600;
+  font-size: 36rpx;
+}
+.pay_address_name{
+  margin-right: 40rpx;
+}
+.pay_address_add{
+  font-size: 32rpx;
+  margin-top: 14rpx;
+}

@@ -1,0 +1,8 @@
+/* pages/user/childCpns/w-address-list/w-address-list.wxss */
+.address_list{
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.address_nav{
+  padding: 20rpx;
+}

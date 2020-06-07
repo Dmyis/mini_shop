@@ -21,7 +21,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    handleCheck(){
+    handleCheck(){      
       this.triggerEvent('checkClick',{})
     }
   }

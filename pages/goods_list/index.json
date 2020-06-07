@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "w-search-input": "../../components/w-search-input/w-search-input",
-    "w-tabs":"./childCpns/w-tabs/w-tabs",
+    "w-tabs":"../../components/w-tabs/w-tabs",
     "w-back-top":"../../components/w-back-top/w-back-top",
     "w-tabs-content":"./childCpns/w-tabs-content/w-tabs-content"
   },

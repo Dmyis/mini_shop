@@ -1,2 +1,23 @@
 <!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<view class="user">
+	<!-- 1.登陆 -->
+	<w-login bindgetUserInfo="getUserInfo"/>
+	<view class="user_card">
+		<!-- 2.足迹 -->
+		<w-history />
+		<!-- 3.我的订单 -->
+		<w-order />
+		<!-- 4.地址管理 -->
+		<w-address-list />
+		<!-- 5.关于我们 -->
+		<w-app-info />
+		<!-- 6.推荐给朋友 -->
+		<view class="share">
+			<button class="share_text" size="mini" open-type="share">把应用推荐给其他人</button>
+		</view>
+		<!-- 7.退出登录 -->
+		<view class="cancel_login" hidden="{{!isShowCancel}}">
+			<button class="cancel_login_btn" bindtap="handleCancel">退出登录</button>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,43 @@
+/* pages/pay/childCpns/w-goods-item/w-goods-item.wxss */
+/* pages/cart/childCpns/w-cart-item/w-cart-item.wxss */
+.goods_item {
+  margin-top: 12rpx;
+  background-color: #fff;
+  display: flex;
+  border-radius: 30rpx;
+  padding: 20rpx;
+}
+.img_group {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart_img {
+  width: 80%;
+}
+
+.cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goos_price {
+  font-size: 36rpx;
+  color: var(--themeColor);
+  font-weight: 500;
+}

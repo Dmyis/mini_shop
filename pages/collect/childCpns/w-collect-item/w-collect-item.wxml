@@ -1,0 +1,17 @@
+<!--pages/collect/w-collect-item/w-collect-item.wxml-->
+<view class="collect_item">
+	<view class="check {{!isCheck?'check_show':''}}">
+		<w-check isChecked="{{collectList.isChecked}}" bindcheckClick="checkClick" data-index="{{index}}"/>
+	</view>
+	<navigator class="goods_item" url="/pages/goods_detail/index?goods_id={{collectList.goods_id}}">
+		<!-- 左侧 图片容器 -->
+		<view class="goods_img_wrap">
+			<image class="goods_img" src="{{collectList.pics[0].pics_mid?collectList.pics[0].pics_mid:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24y9t530j30i20i2glm.jpg'}}"></image>
+		</view>
+		<!-- 右侧 商品容器 -->
+		<view class="goods_info_wrap">
+			<view class="goods_name">{{collectList.goods_name}}</view>
+			<view class="goods_price">￥{{collectList.goods_price}}</view>
+		</view>
+	</navigator>
+</view>

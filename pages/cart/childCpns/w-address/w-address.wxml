@@ -1,10 +1,38 @@
 <!--pages/cart/childCpns/w-address.wxml-->
 <view class="cart-top">
-	<view class="address-box {{addressIsActive?'activeColor':''}}" bind:tap="choiceAddress" >
+	<view class="address-box {{addressIsActive?'activeColor':''}} {{isShowEditFun?'hidden':''}}" bindtap="showModel">
 		<text class="iconfont icon-location"></text>
 		<view class="address">{{address}}</view>
 	</view>
+	<text class="cut">|</text>
 	<view class="edit-box">
-		<view>编辑</view>
+		<view bind:tap="handleEdit">{{edit}}</view>
+	</view>
+</view>
+
+<!-- 渐深的背景层 -->
+<view class='{{bg}}' style="visibility:{{backgroundVisible ? 'visible':'hidden'}}"></view>
+<!-- 选择地址底部弹出层 -->
+<view class="element-wrapper" animation="{{animation}}" style="visibility:{{show ? 'visible':'hidden'}}">
+	<view class="element">
+		<view class='picker_header'>
+			<text class="picker_header_text">配送至</text>
+			<text class="right-bt" catchtap="hidden">×</text>
+		</view>
+		<!-- 内容 -->
+		<view class="element_content">
+			<block wx:for="{{addressList}}" wx:key="index">
+				<view class="element_content_item" bindtap="handleCheckAddress" data-index="{{index}}">
+					<w-check class="w_check" isChecked="{{item.isActive}}" bindcheckClick="checkClick" />
+					<text class="element_content_text">{{item.detail}}</text>
+				</view>
+			</block>
+			<!-- 没有地址显示 -->
+			<view class="getOpenSetting" hidden="{{addressIsActive}}">请添加收货地址</view>
+
+			<view class="addAddress_group">
+				<view class="addAddress" bind:tap="handleAddAddress">新增加收货地址</view>
+			</view>
+		</view>
 	</view>
 </view>

@@ -1,1 +1,9 @@
 /* pages/pay/index.wxss */
+.pay_page{
+  padding-top:152rpx;
+  padding-bottom: 110rpx;
+}
+page{
+  height: 100vh;
+  background-color: #F0F0F0;
+}

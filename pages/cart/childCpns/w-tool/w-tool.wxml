@@ -1,12 +1,17 @@
 <!--pages/cart/childCpns/w-tool/w-tool.wxml-->
 <view class="cart_tool">
 	<view class="checkbox-group">
-		<w-check isChecked="{{selected}}"  bind:tap="onSelectAll"/>全选
+		<w-check isChecked="{{selected}}" bind:tap="onSelectAll" />全选
 	</view>
 
-	<view class="total">
+	<view class="total {{isShowEditFun?'hidden':''}}">
 		总计:<text class="total_price">￥{{price}}</text>
 	</view>
-	<view class="submit">去结算({{counter}})</view>
+	<view class="submit {{isShowEditFun?'hidden':''}}" bind:tap="handlePay">去结算({{counter}})</view>
 
+	<!-- 点击编辑的时候显示 -->
+	<view class="edit_fun" hidden="{{!isShowEditFun}}">
+		<view class="edit_coll" bind:tap="moveCollect">移至收藏</view>
+		<view class="edit_delete" bind:tap="deleteGoods">删除</view>
+	</view>
 </view>

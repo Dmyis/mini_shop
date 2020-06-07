@@ -1,2 +1,22 @@
 <!--pages/collect/index.wxml-->
-<text>pages/collect/index.wxml</text>
+<!-- 1.收藏tab栏 -->
+<w-tabs tabs="{{tabs}}" bindtabsItemChange="tabsItemChange" />
+<view wx:if="{{!isShowNullCollect}}">
+	<!-- 2.编辑栏 -->
+	<w-collect-edit collectNum="{{collectNum}}" bindhandleEditClick="handleEditClick"/>
+	<!-- 3.收藏商品列表 -->
+	<block wx:for="{{collectList}}" wx:key="goods_id">
+		<w-collect-item collectList="{{item}}" index="{{index}}" isCheck="{{!isCheck}}" bind:checkClick="checkClick"/>
+	</block>
+	<!-- 4.工具栏 -->
+	<w-collect-tool isCheck="{{isCheck}}" isCheckedAll="{{isCheckedAll}}" collectList="{{collectList}}" bindisCheckedAll="isCheckedAll" bind:handleCancelCollect="handleCancelCollect"/>
+</view>
+
+<view wx:else class="nullCollect">
+	<image mode="widthFix" src="//wq.360buyimg.com/fd/h5/wxsq_dev/fav/images/empty_bag_090029f2.png" class="nullImg"></image>
+	<view class="null_text">你还没有关注的商品</view>
+	<navigator class="null_nav" url="/pages/index/index" open-type="switchTab">
+    <text class="null_nav_text">去逛逛优品</text>
+    <text class="iconfont icon-xiangyou"></text>
+  </navigator>
+</view>

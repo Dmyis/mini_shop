@@ -1,7 +1,9 @@
 /* pages/goods_detail/childCpns/w-goods-info/w-goods-info.wxss */
 @import "../../../../styles/iconfont.wxss";
 
-
+.icon-shoucang-copy{
+  color: var(--themeColor);
+}
 .goods_price{
   padding: 15rpx;
   color: var(--themeColor);
